@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Time Keeper</title>
+    <link rel="stylesheet" href="task1.css">
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>Time Tracker</p>
+    </div>
+    <section class="signup">
+      <div class="max-width">
+        <div class="signup-content">
+          <div class="column left">
+            <h2>Easy Time Tracking.</h2>
+            <h2>Faster Billing.</h2>
+            <ul>
+              <li>60 time tracks forever free - no commitment and no credit card</li>
+              <li>Seamless integration with our invoices too!</li>
+            </ul>
+            <form class="signup-form" action="index.html" method="post">
+              <input class="email" type="email" name="mail" value="Email"><br>
+              <input class="password" type="password" name="pass" value="password"><br>
+              <button class="signupbtn" type="button" name="signup">Sign Up For Free</button>
+              <p>By Clicking 'Sign Up' you're agreeing to our Term of Service and Privacy Policy.</p>
+            </form>
+          </div>
+          <div class="column right">
+            <img class="img1" src="Gdrive.png" alt="GoogleDrive">
+            <img class="img2" src="timer.png" alt="timer">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="max-width">
+        <h2>What Customers Are Saying</h2>
+        <div class="slider-content">
+          <div class="column left">
+            <img class="ryan" src="Ryan.png" alt="ryan pic">
+          </div>
+          <div class="column right">
+            <h5>Ryan M.</h5>
+            <p>"I think it has the potential to profoundly impact a lot of small businesses, startups, and tiny boutique
+                businesses. I think the greatest value is coming from data showing me the invoice information.. and also,
+                the ability to have the projects, it really is very comprehensive [went back on her word] as a dashboard..</p>
+          </div>
+        </div>
+        <p class="dots">...</p>
+      </div>
+    </section>
+    <section id="tabs">
+      <div class="max-width">
+        <h1 class="section-title">Tabs</h1>
+          <ul class="menu">
+            <li><a class="navlink" href="#home">Home</a></li>
+            <li><a class="navlink active" href="#profile">Profile</a></li>
+            <li><a class="navlink" href="#contact">Contact</a></li>
+            <li><a class="navlink" href="#about">About</a></li>
+          </ul>
+          <hr>
+          <div class="tabcontents">
+            <div id="home">
+              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
+              Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure
+              adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat.
+              Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation
+              mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad
+              duis occaecat ex.
+            </div>
+            <div id="profile">
+              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
+              Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure
+              adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat.
+              Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation
+              mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad
+              duis occaecat ex.
+            </div>
+            <div id="contact">
+              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
+              Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure
+              adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat.
+              Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation
+              mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad
+              duis occaecat ex.
+            </div>
+            <div id="about">
+              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
+              Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure
+              adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat.
+              Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation
+              mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad
+              duis occaecat ex.
+            </div>
+          </div>
+        </div>
+    </section>
+    <script>
+      let btns = document.querySelectorAll(".menu li");
+      btns.forEach((item) => {
+        item.addEventListener("click", ()=>{
+          let activeClass = document.querySelector(".active");
+          activeClass.className=activeClass.className.replace("active", "");
+          item.className+="active";
+        })
+      });
+    </script>
+  </body>
+</html>
